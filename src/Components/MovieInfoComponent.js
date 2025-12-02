@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import { API_KEY } from "../App";
+
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -62,7 +62,7 @@ const MovieInfoComponent = (props) => {
 
   useEffect(() => {
     Axios.get(
-      `https://www.omdbapi.com/?i=${selectedMovie}&apikey=${API_KEY}`,
+      `https://www.omdbapi.com/?i=${selectedMovie}&apikey=${process.env.REACT_APP_API_KEY}`,
     ).then((response) => setMovieInfo(response.data));
   }, [selectedMovie]);
   return (

@@ -4,7 +4,6 @@ import styled from "styled-components";
 import MovieComponent from "./Components/MovieComponent";
 import MovieInfoComponent from "./Components/MovieInfoComponent";
 
-export const API_KEY = "8d9091b4";
 
 const Container = styled.div`
   display: flex;
@@ -78,7 +77,7 @@ function App() {
 
   const fetchData = async (searchString) => {
     const response = await Axios.get(
-      `https://www.omdbapi.com/?s=${searchString}&apikey=${API_KEY}`,
+       `https://www.omdbapi.com/?s=${searchString}&apikey=${process.env.REACT_APP_API_KEY}`,
     );
     updateMovieList(response.data.Search);
   };
