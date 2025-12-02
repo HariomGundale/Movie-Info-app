@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# 🎬 Movie Info App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean and simple React application that allows users to search for movies and view detailed information using the OMDb API.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔍 Search movies by title
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎞️ View poster, title, year, and type
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 📄 Click a movie card to open detailed info
 
-### `npm test`
+- ⚡ Fast and responsive UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🧩 Component-based architecture
 
-### `npm run build`
+- 🔐 API key security using .env file
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React JS
 
-### `npm run eject`
+- Axios / Fetch API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- OMDb API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- HTML / CSS / JavaScript
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Install & Run Locally
 
-## Learn More
+```bash
+# Clone the repository
+git clone https://github.com/HariomGundale/Movie-Info-app.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Navigate into project 
+cd Movie-Info-app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#Install dependencies
+npm install
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔐 Setting Up the API Key (VERY IMPORTANT)
 
-### Analyzing the Bundle Size
+This app requires an OMDb API key.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Step 1 — Get your free API key
 
-### Making a Progressive Web App
+Visit: https://www.omdbapi.com/apikey.aspx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Choose "Free Key", enter your email, and get your API KEY.
 
-### Advanced Configuration
+Step 2 — Create .env file in project root
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Movie-Info-app/.env
 
-### Deployment
+Add your key:
+REACT_APP_API_KEY=your_api_key_here
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Step 3 — Restart the React server
 
-### `npm run build` fails to minify
+React does not auto-load .env, so run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+
+---
+
+## ▶️ Run the Project
+
+```bash
+
+npm start
+
+```
+
+Your app opens at:
+
+👉 http://localhost:3000
+
+---
+
+## 📁 Project Structure
+
+```plaintext
+
+Movie-Info-app/
+│
+├── public/
+│   ├── index.html
+│   ├── movie-icon.svg
+│   ├── search-icon.svg
+│   └── ...
+│
+├── src/
+│   ├── Components/
+│   │   ├── MovieComponent.js
+│   │   └── MovieInfoComponent.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── .env (ignored)
+
+
+```
+
+##  🧑‍💻 Author
+
+Hariom Gundale
